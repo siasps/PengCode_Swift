@@ -15,8 +15,8 @@ class TabBarViewController: UITabBarController {
 
         // Do any additional setup after loading the view.
         
-        UITabBarItem.appearance().setTitleTextAttributes([NSAttributedString.Key.foregroundColor:UIColor.red], for: UIControl.State.normal)
-        UITabBarItem.appearance().setTitleTextAttributes([NSAttributedString.Key.foregroundColor:UIColor.blue], for: UIControl.State.selected)
+        UITabBarItem.appearance().setTitleTextAttributes([NSAttributedString.Key.foregroundColor:UIColor.gray], for: UIControl.State.normal)
+        UITabBarItem.appearance().setTitleTextAttributes([NSAttributedString.Key.foregroundColor:UIColor.cyan], for: UIControl.State.selected)
         
         
         if #available(iOS 13.0, *) {
@@ -31,8 +31,6 @@ class TabBarViewController: UITabBarController {
                 item.standardAppearance = uitabApp
             }
         }
-        
-     
     }
     
 
@@ -47,3 +45,5 @@ class TabBarViewController: UITabBarController {
     */
 
 }
+
+
