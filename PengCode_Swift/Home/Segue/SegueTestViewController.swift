@@ -14,9 +14,17 @@ class SegueTestViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        
+        
     }
     
-
+    @IBAction func button3Click(_ sender: Any) {
+        let storyBoard = UIStoryboard.init(name: "SegueStoryboard", bundle: nil)
+        let vc = storyBoard.instantiateViewController(withIdentifier: "second")
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
+    
+    
     /*
     // MARK: - Navigation
 

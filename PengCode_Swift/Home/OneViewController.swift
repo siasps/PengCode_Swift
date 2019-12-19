@@ -20,7 +20,7 @@ class OneViewController: UIViewController,UITableViewDelegate,UITableViewDataSou
             cell.titleLabel.text = "代理协议"
             break
         case 1:
-            cell.titleLabel.text = "StoryBoard间跳转"
+            cell.titleLabel.text = "等宽高自适应间距 && 三种跳转"
             break
         default:
             break

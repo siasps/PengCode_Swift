@@ -15,6 +15,7 @@
 		B816B05623A9F4C40071B187 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B816B05423A9F4C40071B187 /* LaunchScreen.storyboard */; };
 		B830702123AB6DC3002AA4AA /* MainDelegateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B830702023AB6DC3002AA4AA /* MainDelegateViewController.swift */; };
 		B830702423AB74D2002AA4AA /* SegueTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B830702323AB74D2002AA4AA /* SegueTestViewController.swift */; };
+		B830702623AB8528002AA4AA /* SegueStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B830702523AB8528002AA4AA /* SegueStoryboard.storyboard */; };
 		B874629F23AA00730074F77F /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B874629E23AA00730074F77F /* TabBarViewController.swift */; };
 		B87462C223AB12930074F77F /* OneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B87462C123AB12930074F77F /* OneViewController.swift */; };
 		B87462C523AB12C60074F77F /* TwoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B87462C423AB12C60074F77F /* TwoViewController.swift */; };
@@ -33,6 +34,7 @@
 		B816B05723A9F4C40071B187 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B830702023AB6DC3002AA4AA /* MainDelegateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainDelegateViewController.swift; sourceTree = "<group>"; };
 		B830702323AB74D2002AA4AA /* SegueTestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegueTestViewController.swift; sourceTree = "<group>"; };
+		B830702523AB8528002AA4AA /* SegueStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SegueStoryboard.storyboard; sourceTree = "<group>"; };
 		B874629E23AA00730074F77F /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 		B87462C123AB12930074F77F /* OneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OneViewController.swift; sourceTree = "<group>"; };
 		B87462C423AB12C60074F77F /* TwoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwoViewController.swift; sourceTree = "<group>"; };
@@ -98,6 +100,7 @@
 			isa = PBXGroup;
 			children = (
 				B830702323AB74D2002AA4AA /* SegueTestViewController.swift */,
+				B830702523AB8528002AA4AA /* SegueStoryboard.storyboard */,
 			);
 			path = Segue;
 			sourceTree = "<group>";
@@ -197,6 +200,7 @@
 				B816B05623A9F4C40071B187 /* LaunchScreen.storyboard in Resources */,
 				B816B05323A9F4C40071B187 /* Assets.xcassets in Resources */,
 				B816B05123A9F4C10071B187 /* Main.storyboard in Resources */,
+				B830702623AB8528002AA4AA /* SegueStoryboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
