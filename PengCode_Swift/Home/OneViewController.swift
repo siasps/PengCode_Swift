@@ -35,6 +35,10 @@ class OneViewController: UIViewController,UITableViewDelegate,UITableViewDataSou
             performSegue(withIdentifier: "push.delegate", sender: nil)
             break
             
+        case 1:
+            performSegue(withIdentifier: "push.segue", sender: nil)
+            break
+            
         default:
             break
             
