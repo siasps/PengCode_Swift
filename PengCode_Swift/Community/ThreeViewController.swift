@@ -1,23 +1,19 @@
 //
-//  OneViewController.swift
+//  ThreeViewController.swift
 //  PengCode_Swift
 //
-//  Created by peng on 2019/12/18.
+//  Created by peng on 2019/12/19.
 //  Copyright © 2019 peng. All rights reserved.
 //
 
 import UIKit
 
-class OneViewController: UIViewController {
+class ThreeViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-      
-        
-//        self.tabBarItem.setTitleTextAttributes([NSAttributedString.Key.foregroundColor:UIColor.red], for: UIControl.State.selected)
-//        self.tabBarItem.setTitleTextAttributes([NSAttributedString.Key.foregroundColor:UIColor.orange], for: UIControl.State.normal)
     }
     
 
