@@ -8,7 +8,8 @@
 
 import UIKit
 
-class MainDelegateViewController: UIViewController {
+class MainDelegateViewController: UIViewController,OneProtocol {
+
 
     @IBOutlet weak var buttonHeight: NSLayoutConstraint!
     @IBOutlet weak var button1x: NSLayoutConstraint!
@@ -33,6 +34,21 @@ class MainDelegateViewController: UIViewController {
             i.constant = step
         }
         
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.destination.isKind(of: ChooseColorViewController.classForCoder()) {
+            let vc:ChooseColorViewController = segue.destination as! ChooseColorViewController
+            vc.delegate = self
+        }
+    }
+    
+    //MARK:OneProtocol
+    
+    func chooseBackgroundColor(backColor: UIColor) {
+        self.view.backgroundColor = backColor
+        self.navigationController?.popViewController(animated: true)
+
     }
     
 

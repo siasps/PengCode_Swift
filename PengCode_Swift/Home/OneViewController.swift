@@ -17,7 +17,7 @@ class OneViewController: UIViewController,UITableViewDelegate,UITableViewDataSou
         let cell:HomeCustomCell = tableView.dequeueReusableCell(withIdentifier: "cell") as! HomeCustomCell
         switch indexPath.row {
         case 0:
-            cell.titleLabel.text = "代理协议"
+            cell.titleLabel.text = "代理协议 && 约束代码修改"
             break
         case 1:
             cell.titleLabel.text = "等宽高自适应间距 && 三种跳转"

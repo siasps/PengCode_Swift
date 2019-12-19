@@ -140,7 +140,10 @@
                                     <constraint firstAttribute="width" constant="100" id="8u1-GW-Xp1"/>
                                     <constraint firstAttribute="height" constant="50" id="oVM-69-3iZ"/>
                                 </constraints>
-                                <state key="normal" title="Button"/>
+                                <state key="normal" title="颜色选择"/>
+                                <connections>
+                                    <segue destination="j0C-Vw-6Lg" kind="show" id="rf0-QF-qZp"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LY8-Eo-bFU">
                                 <rect key="frame" x="157" y="343" width="100" height="50"/>
@@ -149,7 +152,7 @@
                                     <constraint firstAttribute="width" constant="100" id="8X4-GB-yM3"/>
                                     <constraint firstAttribute="height" constant="50" id="Hac-9B-jlx"/>
                                 </constraints>
-                                <state key="normal" title="Button"/>
+                                <state key="normal" title="颜色选择"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LTj-hm-LnQ">
                                 <rect key="frame" x="157" y="461" width="100" height="50"/>
@@ -158,7 +161,7 @@
                                     <constraint firstAttribute="height" constant="50" id="2jf-gN-JGG"/>
                                     <constraint firstAttribute="width" constant="100" id="HIt-1S-Ggh"/>
                                 </constraints>
-                                <state key="normal" title="Button"/>
+                                <state key="normal" title="颜色选择"/>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -184,6 +187,68 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iAo-S8-nl3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="4735" y="-1212"/>
+        </scene>
+        <!--Choose Color View Controller-->
+        <scene sceneID="2FR-j4-nfa">
+            <objects>
+                <viewController id="j0C-Vw-6Lg" customClass="ChooseColorViewController" customModule="PengCode_Swift" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="qu3-fs-Yfy">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VTc-6F-WlJ">
+                                <rect key="frame" x="100.5" y="138" width="213" height="175"/>
+                                <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="213" id="MM9-82-s31"/>
+                                </constraints>
+                                <state key="normal" title="我选原谅色"/>
+                                <connections>
+                                    <action selector="chooseGreen:" destination="j0C-Vw-6Lg" eventType="touchUpInside" id="2H7-zl-eFE"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tej-Ro-LYh">
+                                <rect key="frame" x="100.5" y="363" width="213" height="175"/>
+                                <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="213" id="gAu-TL-gR6"/>
+                                </constraints>
+                                <state key="normal" title="我选美汁源"/>
+                                <connections>
+                                    <action selector="chooseOrigin:" destination="j0C-Vw-6Lg" eventType="touchUpInside" id="AQc-mb-tRK"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vde-0a-m2Z">
+                                <rect key="frame" x="100.5" y="588" width="213" height="175"/>
+                                <color key="backgroundColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="213" id="xos-f3-jzE"/>
+                                </constraints>
+                                <state key="normal" title="我选中国红"/>
+                                <connections>
+                                    <action selector="chooseRed:" destination="j0C-Vw-6Lg" eventType="touchUpInside" id="TfF-gE-VQf"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="OlE-HR-DxE" firstAttribute="bottom" secondItem="vde-0a-m2Z" secondAttribute="bottom" constant="50" id="1hJ-Ch-b0U"/>
+                            <constraint firstItem="vde-0a-m2Z" firstAttribute="centerX" secondItem="qu3-fs-Yfy" secondAttribute="centerX" id="9pm-CU-BtO"/>
+                            <constraint firstItem="vde-0a-m2Z" firstAttribute="height" secondItem="VTc-6F-WlJ" secondAttribute="height" id="Cwt-qn-8IG"/>
+                            <constraint firstItem="VTc-6F-WlJ" firstAttribute="centerX" secondItem="qu3-fs-Yfy" secondAttribute="centerX" id="D3J-w6-xsK"/>
+                            <constraint firstItem="Tej-Ro-LYh" firstAttribute="centerX" secondItem="qu3-fs-Yfy" secondAttribute="centerX" id="GGq-2e-xqt"/>
+                            <constraint firstItem="vde-0a-m2Z" firstAttribute="top" secondItem="Tej-Ro-LYh" secondAttribute="bottom" constant="50" id="L4x-VK-kgh"/>
+                            <constraint firstItem="Tej-Ro-LYh" firstAttribute="height" secondItem="VTc-6F-WlJ" secondAttribute="height" id="QWX-hJ-v8q"/>
+                            <constraint firstItem="VTc-6F-WlJ" firstAttribute="top" secondItem="OlE-HR-DxE" secondAttribute="top" constant="50" id="R4N-2v-xLr"/>
+                            <constraint firstItem="Tej-Ro-LYh" firstAttribute="top" secondItem="VTc-6F-WlJ" secondAttribute="bottom" constant="50" id="wP8-xg-P4p"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="OlE-HR-DxE"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="CjU-lo-ZDL"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rrU-hO-NBE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5813.04347826087" y="-1212.0535714285713"/>
         </scene>
         <!--Segue Test View Controller-->
         <scene sceneID="O0c-yb-hnR">
