@@ -22,6 +22,9 @@ class OneViewController: UIViewController,UITableViewDelegate,UITableViewDataSou
         case 1:
             cell.titleLabel.text = "等宽高自适应间距 && 三种跳转"
             break
+        case 2:
+            cell.titleLabel.text = "奇技"
+            break
         default:
             break
             
@@ -37,6 +40,10 @@ class OneViewController: UIViewController,UITableViewDelegate,UITableViewDataSou
             
         case 1:
             performSegue(withIdentifier: "push.segue", sender: nil)
+            break
+            
+        case 2:
+            performSegue(withIdentifier: "push.swiftApi", sender: nil)
             break
             
         default:
