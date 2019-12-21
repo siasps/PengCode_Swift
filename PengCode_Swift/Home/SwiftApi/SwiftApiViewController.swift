@@ -10,7 +10,7 @@ import UIKit
 
 class SwiftApiViewController: UIViewController {
     
-    let url:NSURL? = NSURL(string: "http://www.baidu.com")
+    var url:NSURL? = NSURL(string: "http://www.baidu.com")
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -92,6 +92,18 @@ class SwiftApiViewController: UIViewController {
         
         self.structInitCreate()//创建结构体
         
+        //KVO 添加监听
+        self.addObserver(self, forKeyPath: "title", options: NSKeyValueObservingOptions.old, context: nil)
+
+    }
+    
+    //监听回调
+    override func observeValue(forKeyPath keyPath: String?, of object: Any?, change: [NSKeyValueChangeKey : Any]?, context: UnsafeMutableRawPointer?) {
+        if keyPath == "title" {
+            print("----------\(String(describing: change))-----\(String(describing: context))")
+        }else{
+            print("----------\(String(describing: change))-----\(String(describing: context))")
+        }
     }
     
     func backwords(s1:String,s2:String) -> Bool {
@@ -100,6 +112,8 @@ class SwiftApiViewController: UIViewController {
     
     @IBAction func buttonClick(_ sender: Any) {
         //performSegue(withIdentifier: "push.zhouqi", sender: nil)
+        
+        self.title = "KVO"//修改被监听的属性值
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
