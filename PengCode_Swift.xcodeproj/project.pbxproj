@@ -25,6 +25,8 @@
 		B87462C523AB12C60074F77F /* TwoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B87462C423AB12C60074F77F /* TwoViewController.swift */; };
 		B87462C823AB13140074F77F /* ThreeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B87462C723AB13130074F77F /* ThreeViewController.swift */; };
 		B87462CB23AB133B0074F77F /* FourViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B87462CA23AB133B0074F77F /* FourViewController.swift */; };
+		B89C46CB23B33316004957DE /* GuideViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B89C46CA23B33316004957DE /* GuideViewController.swift */; };
+		B89C46CD23B335CE004957DE /* data.plist in Resources */ = {isa = PBXBuildFile; fileRef = B89C46CC23B335CE004957DE /* data.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +50,8 @@
 		B87462C423AB12C60074F77F /* TwoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwoViewController.swift; sourceTree = "<group>"; };
 		B87462C723AB13130074F77F /* ThreeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreeViewController.swift; sourceTree = "<group>"; };
 		B87462CA23AB133B0074F77F /* FourViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FourViewController.swift; sourceTree = "<group>"; };
+		B89C46CA23B33316004957DE /* GuideViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuideViewController.swift; sourceTree = "<group>"; };
+		B89C46CC23B335CE004957DE /* data.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = data.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +95,7 @@
 				B816B04F23A9F4C10071B187 /* Main.storyboard */,
 				B816B05223A9F4C40071B187 /* Assets.xcassets */,
 				B816B05423A9F4C40071B187 /* LaunchScreen.storyboard */,
+				B89C46CC23B335CE004957DE /* data.plist */,
 				B816B05723A9F4C40071B187 /* Info.plist */,
 			);
 			path = PengCode_Swift;
@@ -128,6 +133,7 @@
 			isa = PBXGroup;
 			children = (
 				B87462C123AB12930074F77F /* OneViewController.swift */,
+				B89C46C923B332E3004957DE /* GuideVC */,
 				B81770B023AC6C6B00F47EE9 /* SwiftApi */,
 				B830702223AB7493002AA4AA /* Segue */,
 				B830701F23AB6D85002AA4AA /* DelegateDemo */,
@@ -157,6 +163,14 @@
 				B87462CA23AB133B0074F77F /* FourViewController.swift */,
 			);
 			path = Me;
+			sourceTree = "<group>";
+		};
+		B89C46C923B332E3004957DE /* GuideVC */ = {
+			isa = PBXGroup;
+			children = (
+				B89C46CA23B33316004957DE /* GuideViewController.swift */,
+			);
+			path = GuideVC;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -220,6 +234,7 @@
 				B816B05623A9F4C40071B187 /* LaunchScreen.storyboard in Resources */,
 				B816B05323A9F4C40071B187 /* Assets.xcassets in Resources */,
 				B816B05123A9F4C10071B187 /* Main.storyboard in Resources */,
+				B89C46CD23B335CE004957DE /* data.plist in Resources */,
 				B830702623AB8528002AA4AA /* SegueStoryboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -239,6 +254,7 @@
 				B87462C823AB13140074F77F /* ThreeViewController.swift in Sources */,
 				B87462C523AB12C60074F77F /* TwoViewController.swift in Sources */,
 				B816B04A23A9F4C10071B187 /* AppDelegate.swift in Sources */,
+				B89C46CB23B33316004957DE /* GuideViewController.swift in Sources */,
 				B830702823AB8C80002AA4AA /* Protocol.swift in Sources */,
 				B87462CB23AB133B0074F77F /* FourViewController.swift in Sources */,
 				B816B04C23A9F4C10071B187 /* SceneDelegate.swift in Sources */,

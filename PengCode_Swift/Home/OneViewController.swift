@@ -25,6 +25,8 @@ class OneViewController: UIViewController,UITableViewDelegate,UITableViewDataSou
         case 2:
             cell.titleLabel.text = "奇技"
             break
+        case 3:
+            cell.titleLabel.text = "Guide Scrollview"
         default:
             break
             
@@ -45,7 +47,8 @@ class OneViewController: UIViewController,UITableViewDelegate,UITableViewDataSou
         case 2:
             performSegue(withIdentifier: "push.swiftApi", sender: nil)
             break
-            
+        case 3:
+            performSegue(withIdentifier: "push.guide", sender: nil)
         default:
             break
             
