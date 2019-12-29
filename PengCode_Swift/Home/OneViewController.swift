@@ -61,6 +61,15 @@ class OneViewController: UIViewController,UITableViewDelegate,UITableViewDataSou
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        
+        let btn = UIButton()
+        btn.frame = CGRect(x: 0, y: 0, width: 50, height: 50)
+        btn.setImage(UIImage.init(imageLiteralResourceName: "back_icon"), for: .normal)
+        btn.addTarget(self, action: #selector(back), for: .touchUpInside)
+        btn.contentEdgeInsets = UIEdgeInsets(top: 0, left: -30, bottom: 0, right: 0)
+        let leftBarButtonItem = UIBarButtonItem(customView: btn)
+        
+        self.navigationItem.backBarButtonItem = leftBarButtonItem
     }
     
     

@@ -25,6 +25,8 @@ class GuideViewController: UIViewController {
 
         // Do any additional setup after loading the view.
         
+        self.showCustomNavBackButton()
+        self.title = "指南"
         
     }
     override func viewWillAppear(_ animated: Bool) {

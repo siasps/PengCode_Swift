@@ -27,6 +27,7 @@
 		B87462CB23AB133B0074F77F /* FourViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B87462CA23AB133B0074F77F /* FourViewController.swift */; };
 		B89C46CB23B33316004957DE /* GuideViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B89C46CA23B33316004957DE /* GuideViewController.swift */; };
 		B89C46CD23B335CE004957DE /* data.plist in Resources */ = {isa = PBXBuildFile; fileRef = B89C46CC23B335CE004957DE /* data.plist */; };
+		B8C6D91A23B88A4B00125C19 /* UINavigationControlExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8C6D91923B88A4B00125C19 /* UINavigationControlExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +53,7 @@
 		B87462CA23AB133B0074F77F /* FourViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FourViewController.swift; sourceTree = "<group>"; };
 		B89C46CA23B33316004957DE /* GuideViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuideViewController.swift; sourceTree = "<group>"; };
 		B89C46CC23B335CE004957DE /* data.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = data.plist; sourceTree = "<group>"; };
+		B8C6D91923B88A4B00125C19 /* UINavigationControlExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UINavigationControlExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +86,7 @@
 		B816B04823A9F4C10071B187 /* PengCode_Swift */ = {
 			isa = PBXGroup;
 			children = (
+				B8C6D91823B8895600125C19 /* Extension */,
 				B87462C923AB13280074F77F /* Me */,
 				B87462C623AB12EB0074F77F /* Community */,
 				B87462C323AB129B0074F77F /* Shop */,
@@ -173,6 +176,14 @@
 			path = GuideVC;
 			sourceTree = "<group>";
 		};
+		B8C6D91823B8895600125C19 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				B8C6D91923B88A4B00125C19 /* UINavigationControlExtension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -259,6 +270,7 @@
 				B87462CB23AB133B0074F77F /* FourViewController.swift in Sources */,
 				B816B04C23A9F4C10071B187 /* SceneDelegate.swift in Sources */,
 				B830702423AB74D2002AA4AA /* SegueTestViewController.swift in Sources */,
+				B8C6D91A23B88A4B00125C19 /* UINavigationControlExtension.swift in Sources */,
 				B81770B423AC73EF00F47EE9 /* SwiftZhouQiViewController.swift in Sources */,
 				B830702123AB6DC3002AA4AA /* MainDelegateViewController.swift in Sources */,
 			);
